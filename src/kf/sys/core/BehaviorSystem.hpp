@@ -40,7 +40,7 @@ public:
         behavior->display();
     }
 
-    virtual void loop() {
+    virtual void update() {
         auto behavior = getCurrentBehavior();
         if (nullptr == behavior) { return; }
         behavior->update();
