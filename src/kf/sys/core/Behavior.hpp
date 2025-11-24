@@ -17,7 +17,7 @@ public:
         components.push_back(&component);
     }
 
-    virtual void display() {
+    void display() {
         for (auto component: components) {
             component->display();
         }
